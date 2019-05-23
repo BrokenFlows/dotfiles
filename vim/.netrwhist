@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ciandowd/.bash_sessions'
+let g:netrw_dirhist_2='/Users/ciandowd/.vim'
+let g:netrw_dirhist_3='/Users/ciandowd/Library/Mobile Documents/com~apple~CloudDocs/Code/knapsack c/optpack.c/optpack.c'
+let g:netrw_dirhist_4='/Users/ciandowd/Documents/UCD/5th Year/Term2/Digital Communications/Lab Assignments/2Assignment/report'
+let g:netrw_dirhist_5='/Users/ciandowd/T2'
+let g:netrw_dirhist_6='/Users/ciandowd/Documents/UCD/5th Year/Term2/Advances Wireless Networking/Past Papers'
+let g:netrw_dirhist_7='/Users/ciandowd/vim-monokai'
+let g:netrw_dirhist_8='/Users/ciandowd/.vim'
+let g:netrw_dirhist_9='/Users/ciandowd/.config/fish/conf.d'
