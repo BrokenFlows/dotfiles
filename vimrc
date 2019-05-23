@@ -1,11 +1,6 @@
 " Maintainer:	BrokenFlows
 " Last change:	2019 May 23
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -16,8 +11,7 @@ set backspace=indent,eol,start
 " line numbering
 set number
 
-" spell checking for LaTeX files
-"autocmd FileType tex setlocal spell spelllang=en_gb
+" spell checking for TeX, txt, and md files
 set spelllang=en_gb
 autocmd BufRead,BufNewFile *.tex setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
@@ -31,9 +25,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0 noexpandtab
 
-" background change(?)
-" Didn't work: set background=light
-
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
@@ -43,9 +34,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -71,15 +59,7 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 "  syntax enable
-  "colorscheme monokai
   colorscheme monokai-tasty
-  "colorscheme hashpunk
-  "colorscheme hashpunk-sweet
-  "colorscheme hashpunk-lapis
-  "colorscheme apprentice " dark low contrast blues and greens
-  "colorscheme blaaark " dark with contrast and reds
-  "colorscheme lucius " dark with blues greens and yellows
-  "LuciusDarkHighContrast " better lucius
 endif
 
 " Status Line {
@@ -127,8 +107,10 @@ else
 
 endif " has("autocmd")
 
-" vim packages here:
+" vim packages path:
 set packpath+=~/.vim/pack/
+
+" add FuZzy Finder to the run time path
 set rtp+=/usr/local/opt/fzf
 
 " Convenient command to see the difference between the current buffer and the
