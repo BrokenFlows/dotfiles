@@ -16,6 +16,7 @@ set spelllang=en_gb
 autocmd BufRead,BufNewFile *.tex setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.taskpaper setlocal spell
 
 " set clipboard to work with yank
 set clipboard=unnamed
