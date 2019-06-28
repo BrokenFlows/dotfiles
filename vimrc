@@ -54,6 +54,13 @@ set hidden
 " Keep window sizes roughly as they were when closing a window
 set noea " noequalalways
 
+" custom mappings
+map <Space> <Leader>
+nnoremap <leader>h <C-W>h
+nnoremap <leader>j <C-W>j
+nnoremap <leader>k <C-W>k
+nnoremap <leader>l <C-W>l
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
