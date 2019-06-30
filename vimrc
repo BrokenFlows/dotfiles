@@ -51,24 +51,29 @@ endif
 " Abandoned buffers are just hidden
 set hidden
 
-" Keep window sizes roughly as they were when closing a window
-set noea " noequalalways
-
-" custom mappings
-map <Space> <Leader>
-nnoremap <leader>h <C-W>h
-nnoremap <leader>j <C-W>j
-nnoremap <leader>k <C-W>k
-nnoremap <leader>l <C-W>l
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
-"  syntax enable
+  syntax enable
   colorscheme monokai-tasty
 endif
+
+" Keep window sizes roughly as they were when closing a window
+set noea " noequalalways
+
+" Custom Mappings {
+	map <Space> <Leader>
+	" Moving between buffers
+	nnoremap <leader>h <C-W>h
+	nnoremap <leader>j <C-W>j
+	nnoremap <leader>k <C-W>k
+	nnoremap <leader>l <C-W>l
+
+	" Bring next line onto this line
+	nnoremap <leader>x J
+" } end of custom mappings
 
 " Status Line {
 	set laststatus=2                             " always show statusbar
