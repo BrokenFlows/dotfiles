@@ -54,9 +54,8 @@ set hidden
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
   syntax enable
+  set hlsearch
   colorscheme monokai-tasty
 endif
 
@@ -73,6 +72,9 @@ set noea " noequalalways
 
 	" Bring next line onto this line
 	nnoremap <leader>x J
+
+	" Build structure for LaTeX Environments
+	inoremap #2 \begin{}<CR><CR>\end{}<C-[>ki	
 " } end of custom mappings
 
 " Status Line {
