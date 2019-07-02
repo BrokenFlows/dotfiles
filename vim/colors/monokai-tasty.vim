@@ -8,7 +8,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "vim-monokai-tasty"
+let g:colors_name = "monokai-tasty"
 
 " User Options
 if !exists("g:vim_monokai_tasty_italic")
