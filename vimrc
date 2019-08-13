@@ -62,6 +62,9 @@ endif
 " Keep window sizes roughly as they were when closing a window
 set noea " noequalalways
 
+" for ConTeXt highlighting in *.tex files
+let g:tex_flavor="context"
+
 " Custom Mappings {
 	map <Space> <Leader>
 	" Moving between buffers

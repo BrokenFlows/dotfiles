@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.tex set syntax=context
+"autocmd BufNewFile,BufRead *.tex set syntax=context
